@@ -13,7 +13,20 @@ function Hero() {
     const message2 = elements.querySelectorAll('.message2');
     const message3 = elements.querySelectorAll('.message3');
 
-    console.log(message1);
+    const textM1 = elements.querySelectorAll('.text1');
+    const textM2 = elements.querySelectorAll('.text2');
+    const textM3 = elements.querySelectorAll('.text3');
+
+    gsap.set([message1, message2, message3, textM1, textM2, textM3], {autoAlpha: 0});
+
+    const tl = gsap.timeline({defaults: { ease: 'power3.inOut'}});
+
+    tl.fromTo(message1, { scaleX: 0},{duration: 1 ,scaleX: 1, autoAlpha:1})
+      .fromTo(textM1, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1})
+      .fromTo(message2, { scaleX: 0,   transformOrigin: '100% 50%'},{duration: 1 ,scaleX: 1, autoAlpha:1})
+      .fromTo(textM2, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1})
+      .fromTo(message3, { scaleX: 0},{duration: 1 ,scaleX: 1, autoAlpha:1})
+      .fromTo(textM3, { scaleX: 0},{duration: 0.5 ,scaleX: 1, autoAlpha:1});
   });
 
   return (

@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.wrapper {
+  width: 60%;
+  height: 60%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

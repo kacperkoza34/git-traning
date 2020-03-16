@@ -1,1 +1,1 @@
-let wilczaZmienna = 0;
+let wilczaZmienna = wilk;

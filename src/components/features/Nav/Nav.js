@@ -18,5 +18,4 @@ function Nav() {
     </div> );
 }
 
-export default;
-
+export default Nav;

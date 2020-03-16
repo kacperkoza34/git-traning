@@ -1,0 +1,1 @@
+let wilczaZmienna = 0;

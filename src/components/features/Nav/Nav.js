@@ -8,9 +8,12 @@ function Nav() {
     <div className={styles.nav}>
       <ul> {
         navConfig.map( ({title, link}) =>(
-          <li>
-            <NavLink to={link} key={link}>{title}</NavLink>
-          </li>
+          <div>
+            <button>Do nothing</button>
+            <li>
+              <NavLink to={link} key={link}>{title}</NavLink>
+            </li>
+          </div>
       )
       )
       }

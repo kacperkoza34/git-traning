@@ -18,6 +18,7 @@ const twoSum = (arr, target) => {
 			}
 		}
 		//tutaj tez nie wiem co robie
+    var x = "sd"; // dodanie czegokolwiek
 	}
 	return result;
 }

@@ -1,1 +1,1 @@
-let wilczaZmienna = 0;
+let wilczaZmienna = 0 + 'koza'+ ' test' + 22;

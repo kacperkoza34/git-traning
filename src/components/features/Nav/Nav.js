@@ -4,15 +4,19 @@ import {NavLink} from 'react-router-dom';
 import { navConfig } from './NavConfig';
 
 function Nav() {
-   return (
-      <div className={styles.nav}>
-       <ul> {navConfig.map( ({title, link}) =>(
+  return (
+    <div className={styles.nav}>
+      <ul> {
+        navConfig.map( ({title, link}) =>(
           <li>
             <NavLink to={link} key={link}>{title}</NavLink>
-          </li> )
-         )
-        }
+          </li>
+      )
+      )
+      }
       </ul>
-      </div> );
-  }
-export default Nav;
+    </div> );
+}
+
+export default;
+
